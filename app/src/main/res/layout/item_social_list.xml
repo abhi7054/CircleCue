@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivMain"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/facebook"/>
+
+            <TextView
+                android:id="@+id/socialClickTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11sp"
+                android:textColor="@color/white"
+                android:text="Click 0"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/socialTextView"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:text="https://www.facebook.com/"
+            android:textColor="@color/white"
+            android:layout_marginStart="20dp"
+            android:clickable="true"
+            android:layout_gravity="center"/>
+
+        <CheckBox
+            android:id="@+id/privateCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Private"
+            android:buttonTint="@color/colorAccent"
+            android:drawablePadding="10dp"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</LinearLayout>

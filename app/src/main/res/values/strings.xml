@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">CircleCue</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="one_app_one_id_for_all_your_social_media_accounts">One App - One ID for all your Social Media Accounts</string>
+    <string name="join_the_circle_free">Join the Circle !! Free</string>
+    <string name="email_address_username">Email Address/ Username</string>
+    <string name="password">Password</string>
+    <string name="show_password">Show Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="join_now_free">Join Now Free</string>
+    <string name="or">Or</string>
+    <string name="copyright_2019_circlecue_inc_patented_usa_and_international">Copyright @ 2019 CircleCue, Inc. Patented USA and International</string>
+    <string name="about_us">About Us</string>
+    <string name="faqs">FAQs</string>
+    <string name="showcase">Showcase</string>
+    <string name="hide_password">Hide Password</string>
+    <string name="personal">Personal</string>
+    <string name="business">Business</string>
+    <string name="upon_signup_an_unique_password_is_emailed_to_change_it_later">(Upon Signup an unique password is emailed to change it later)</string>
+    <string name="email_address">*Email Address</string>
+    <string name="username">*Username</string>
+    <string name="enter_phone_number_visible_on_profile">Phone Number (Visible on profile)</string>
+    <string name="add_social_media_accounts">Add Social Media Accounts</string>
+
+    <string name="term_and_condition">By using our app you agree to our <a href="https://circlecue.com/terms.html">Terms and Conditions</a> and <a href="https://circlecue.com/terms.html">Privacy Policy</a>
+
+    </string>
+    <string name="sign_up">Sign Up</string>
+    <string name="private_string">Private</string>
+    <string name="facebook_username">Facebook Username</string>
+    <string name="instagram_username">Instagram Username</string>
+    <string name="linkedin_username">LinkedIn Username</string>
+    <string name="twitter_username">Twitter Username</string>
+    <string name="enter_website">Enter Website</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="view_profile">View Profile</string>
+    <string name="search_profiles">Search Profiles</string>
+    <string name="my_circle">My Circle</string>
+    <string name="favorites">Favorites</string>
+    <string name="notes">Notes</string>
+    <string name="near_by">Near By</string>
+    <string name="change_password">Change Password</string>
+    <string name="help_string">Help</string>
+    <string name="logout">Logout</string>
+    <string name="enter_your_email_address">Enter Your Email Address</string>
+    <string name="add_your_social_media_links">Add Your Social Media Links</string>
+    <string name="to_make_your_sm_links_clickable_please_copy_paste_the_full_url_of_your_profile_n_for_example_www_instagram_com_circlecue"><![CDATA[To make your SM links clickable please copy & paste the full URL of your profile \n\n For example: www.instagram.com/CircleCue]]></string>
+    <string name="personal_info">Personal Info</string>
+    <string name="show">Show</string>
+    <string name="update">Update</string>
+    <string name="group_b">Group B</string>
+    <string name="group_c">Group C</string>
+    <string name="group_d">Group D</string>
+    <string name="group_e">Group E</string>
+    <string name="email">Email</string>
+    <string name="send_email_notification">Email Notification</string>
+    <string name="show_location">Show Location</string>
+    <string name="facebook_profile_url">Facebook Profile URL</string>
+    <string name="instagram_profile_url">Instagram Profile URL</string>
+    <string name="linkedin_profile_url">LinkedIn Profile URL</string>
+    <string name="website_url">Website URL</string>
+    <string name="pinterest_profile_url">Pinterest Profile URL</string>
+    <string name="snap_chat_profile_url">Snap Chat URL</string>
+    <string name="youtube_url">Youtube URL</string>
+    <string name="skype_username">Skype Username</string>
+    <string name="telephone_whatsapp">Telephone/Whatsapp</string>
+    <string name="viber">Viber</string>
+    <string name="match_url">Match URL</string>
+    <string name="meetup">MeetUp</string>
+    <string name="tinder">Tinder</string>
+    <string name="zoosk">Zooks</string>
+    <string name="hinge">Hinge</string>
+    <string name="plenty_of_fish">Plenty Of Fish</string>
+    <string name="wechat">Wechat</string>
+    <string name="tumblr">Tumblr</string>
+    <string name="flickr">Flickr</string>
+    <string name="quora">Quora</string>
+    <string name="bumble">Bumble</string>
+    <string name="tik_tok">Tik Tok</string>
+    <string name="favourites">Favourites</string>
+    <string name="copy">Copy</string>
+    <string name="block_user">Block User</string>
+    <string name="add_to_favorites">Add to favorites</string>
+    <string name="inner_circle_request">Inner Circle Request</string>
+    <string name="send_message">Send Message</string>
+
+</resources>

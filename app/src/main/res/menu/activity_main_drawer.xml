@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:id="@+id/group1" android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard_icon"
+            android:title="@string/dashboard"/>
+    </group>
+
+    <group android:id="@+id/group2" android:checkableBehavior="single">
+        <item
+            android:id="@+id/view_profile"
+            android:icon="@drawable/dashboard_icon"
+            android:title="@string/view_profile" />
+    </group>
+
+    <group android:id="@+id/group3" android:checkableBehavior="single">
+        <item
+            android:id="@+id/search_profiles_item"
+            android:icon="@drawable/search_profile_icon"
+            android:title="@string/search_profiles" />
+    </group>
+
+    <group android:id="@+id/group4" android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_circle"
+            android:icon="@drawable/message_icon"
+            android:title="@string/my_circle" />
+    </group>
+
+
+    <group android:id="@+id/group5" android:checkableBehavior="single">
+        <item
+            android:id="@+id/favourites_item"
+            android:icon="@drawable/favourites_icon"
+            android:title="@string/favorites" />
+    </group>
+
+    <group android:id="@+id/group6" android:checkableBehavior="single">
+        <item
+            android:id="@+id/message_item"
+            android:icon="@drawable/search_profile_icon"
+            android:title="@string/search_profiles" />
+    </group>
+
+    <group android:id="@+id/group7" android:checkableBehavior="single">
+        <item
+            android:id="@+id/notes_item"
+            android:icon="@drawable/note_icon"
+            android:title="@string/notes" />
+    </group>
+
+    <group android:id="@+id/group8" android:checkableBehavior="single">
+        <item
+            android:id="@+id/near_by_item"
+            android:icon="@drawable/nearby_icon"
+            android:title="@string/near_by" />
+    </group>
+
+    <group android:id="@+id/group9" android:checkableBehavior="single">
+        <item
+            android:id="@+id/change_password_item"
+            android:icon="@drawable/note_icon"
+            android:title="@string/change_password" />
+    </group>
+
+    <group android:id="@+id/group10" android:checkableBehavior="single">
+        <item
+            android:id="@+id/help_item"
+            android:icon="@drawable/help_icon"
+            android:title="@string/help_string" />
+    </group>
+
+    <group android:id="@+id/group11" android:checkableBehavior="single">
+        <item
+            android:id="@+id/logout_item"
+            android:icon="@drawable/logout"
+            android:title="@string/logout" />
+    </group>
+
+
+</menu>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/login_background">
+
+    <LinearLayout
+        android:id="@+id/mainLoginLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_white_background"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/one_app_one_id_for_all_your_social_media_accounts"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif-medium"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:src="@drawable/circle_cue_logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/join_the_circle_free"
+            android:textStyle="italic"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/text_color"/>
+
+
+
+
+        <EditText
+            android:id="@+id/loginEmailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:hint="@string/email_address_username"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/mail_icon"
+            android:drawablePadding="10dp"/>
+
+       <com.google.android.material.textfield.TextInputLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="20dp"
+           android:layout_marginEnd="20dp"
+           android:layout_marginTop="20dp"
+           android:hint="@string/password"
+           app:passwordToggleEnabled="true"
+           app:passwordToggleDrawable="@drawable/password_toogle_drawable"
+           android:inputType="textPassword">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:drawablePadding="10dp"
+               android:inputType="textPassword"
+               android:id="@+id/passwordEditText"
+               android:drawableStart="@drawable/password"/>
+
+       </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/forgotPasswordTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:text="@string/forgot_password"
+            android:textColor="@color/text_color" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button_login"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/or"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"/>
+
+        <Button
+            android:id="@+id/registerPageButton"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:text="@string/join_now_free"
+            android:textAllCaps="false"
+            android:background="@drawable/rounded_button_login"
+            android:textColor="@color/white"
+            android:textSize="15sp"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainLoginLinearLayout"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/copyright_2019_circlecue_inc_patented_usa_and_international"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:padding="0dp"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"/>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/about_us"
+                android:id="@+id/aboutUsTextView"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/faqs"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:id="@+id/faqsTextView"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/showcase"
+                android:id="@+id/showcaseTextView"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

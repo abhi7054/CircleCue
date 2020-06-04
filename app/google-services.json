@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "150103267052",
+    "firebase_url": "https://uprizemobiledeve-1583332379480.firebaseio.com",
+    "project_id": "uprizemobiledeve-1583332379480",
+    "storage_bucket": "uprizemobiledeve-1583332379480.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150103267052:android:4b0609f5180a3e88e7b7c9",
+        "android_client_info": {
+          "package_name": "com.uprize.vtechapp.uprize"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150103267052-7edrqvef809b31712hjjv70uoej8n7so.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uprize.vtechapp.uprize",
+            "certificate_hash": "47dfae2b572e0d1fabdbf0b639f150465aebe1a9"
+          }
+        },
+        {
+          "client_id": "150103267052-cqd2rk87ggvabiec9juvu9r4899d94k4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUHWT_VrKfSnpmKtFOjMWW40ha0z2RBEk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150103267052-cqd2rk87ggvabiec9juvu9r4899d94k4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

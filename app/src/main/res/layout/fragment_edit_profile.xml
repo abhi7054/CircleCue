@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.EditProfileFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profilePicEditImageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_launcher_background" />
+
+
+            <TextView
+                android:id="@+id/usernameEditProfileTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/countryEditProfileTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="@string/add_your_social_media_links"
+                android:textColor="#FFC107"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="@string/to_make_your_sm_links_clickable_please_copy_paste_the_full_url_of_your_profile_n_for_example_www_instagram_com_circlecue"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/personal_info"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+                <Button
+                    android:id="@+id/showPersonalInfoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/show"
+                    android:layout_marginEnd="20dp"
+                    android:padding="3dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_button_login"/>
+
+            </LinearLayout>
+
+            <!-- Personal Info Layout -->
+            <LinearLayout
+                android:id="@+id/personalInfoLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:text="@string/email"
+                        android:drawableStart="@drawable/email_update_profile"
+                        android:drawablePadding="20dp"
+                        android:layout_weight="1"/>
+
+                    <EditText
+                        android:id="@+id/updateProfileEmailEditText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:text="@string/send_email_notification"
+                        android:drawableStart="@drawable/ic_notification"
+                        android:drawablePadding="20dp"
+                        android:layout_weight="1"/>
+
+                    <CheckBox
+                        android:id="@+id/emailNotificationCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="7"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="@color/white"
+                        android:text="@string/show_location"
+                        android:drawableStart="@drawable/ic_location"
+                        android:drawablePadding="20dp"
+                        android:layout_weight="1"/>
+
+                    <CheckBox
+                        android:id="@+id/showLocationCheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="Group A"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+                <Button
+                    android:id="@+id/showGroupAInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/show"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_button_login"/>
+
+            </LinearLayout>
+
+
+            <!-- Group A Layout -->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/groupALinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileFacebookEditText"
+                        android:hint="@string/facebook_profile_url"
+                        android:drawableStart="@drawable/facebook"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofileFacebookCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileInstaEditText"
+                        android:hint="@string/instagram_profile_url"
+                        android:drawableStart="@drawable/insta"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofileInstaCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileLinkedInEditText"
+                        android:hint="@string/linkedin_profile_url"
+                        android:drawableStart="@drawable/linkedin"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofileLinkedInCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileTwitterEditText"
+                        android:hint="Twitter Profile Link"
+                        android:drawableStart="@drawable/twitter"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditProfileTwitterCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileWebsiteEditText"
+                        android:hint="@string/website_url"
+                        android:drawableStart="@drawable/browse"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditProfileWebsiteCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/group_b"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+                <Button
+                    android:id="@+id/showGroupBInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/show"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_button_login"/>
+
+            </LinearLayout>
+
+            <!-- Group B Layout -->
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/groupBLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfilePinterestEditText"
+                        android:hint="@string/pinterest_profile_url"
+                        android:drawableStart="@drawable/ic_shaddi"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofilePinterestCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileSnapChatEditText"
+                        android:hint="@string/snap_chat_profile_url"
+                        android:drawableStart="@drawable/ic_snapchat"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofileSnapChatCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileYoutubeEditText"
+                        android:hint="@string/youtube_url"
+                        android:drawableStart="@drawable/ic_youtube"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofileYoutubeCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileSkypeEditText"
+                        android:hint="@string/skype_username"
+                        android:drawableStart="@drawable/ic_skype"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditProfileSkypeCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileWhatsappEditText"
+                        android:hint="@string/telephone_whatsapp"
+                        android:drawableStart="@drawable/ic_whatapp"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditProfileWhatsappCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/group_c"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+                <Button
+                    android:id="@+id/showGroupCInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/show"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_button_login"/>
+
+            </LinearLayout>
+
+            <!-- Group C Layout -->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/groupCLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileViberEditText"
+                        android:hint="@string/viber"
+                        android:drawableStart="@drawable/ic_viver"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofileViberCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileMatchEditText"
+                        android:hint="@string/match_url"
+                        android:drawableStart="@drawable/ic_match"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofileMatchCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileYelpEditText"
+                        android:hint="Yelp"
+                        android:drawableStart="@drawable/ic_yelp"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofileYelpCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileMeetUpEditText"
+                        android:hint="@string/meetup"
+                        android:drawableStart="@drawable/ic_meetup"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditProfileMeetUpCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileTikTokEditText"
+                        android:hint="@string/tik_tok"
+                        android:drawableStart="@drawable/tiktok"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditProfileTikTokCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/group_d"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+                <Button
+                    android:id="@+id/showGroupDInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/show"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_button_login"/>
+
+            </LinearLayout>
+
+            <!-- Group D -->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/groupDLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileTinderEditText"
+                        android:hint="@string/tinder"
+                        android:drawableStart="@drawable/ic_tinder"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofileTinderCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileOkCupidEditText"
+                        android:hint="OK Cupid"
+                        android:drawableStart="@drawable/ic_okcupid"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofileOKCupidCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileZooskEditText"
+                        android:hint="@string/zoosk"
+                        android:drawableStart="@drawable/ic_zooks"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofileZooksCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileHingeEditText"
+                        android:hint="@string/hinge"
+                        android:drawableStart="@drawable/ic_hinge"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditProfileHingeCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+
+                <!-- Group D -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfilePlentyOfFishEditText"
+                        android:hint="@string/plenty_of_fish"
+                        android:drawableStart="@drawable/ic_plentyfish"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditProfilePlentyOfFishCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/group_e"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"/>
+
+                <Button
+                    android:id="@+id/showGroupEInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="@string/show"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/rounded_button_login"/>
+
+            </LinearLayout>
+
+            <!-- Group E -->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/groupELinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileWeChatEditText"
+                        android:hint="@string/wechat"
+                        android:drawableStart="@drawable/ic_wechat"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofileWeChatCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileTumblrEditText"
+                        android:hint="@string/tumblr"
+                        android:drawableStart="@drawable/ic_tumblr"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofileTumblrCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileFlickrEditText"
+                        android:hint="@string/flickr"
+                        android:drawableStart="@drawable/ic_flicker"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditprofileFlickrCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileQuoraEditText"
+                        android:hint="@string/quora"
+                        android:drawableStart="@drawable/ic_quora"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditProfileQuoraCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:textColorHint="@color/black"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editProfileBumbleEditText"
+                        android:hint="@string/bumble"
+                        android:drawableStart="@drawable/ic_qq"
+                        android:drawablePadding="15dp"/>
+
+                    <CheckBox
+                        android:layout_weight="2"
+                        android:textColor="@color/white"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/EditProfileBumbleCheckbox"
+                        android:text="@string/private_string"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/profileUpdateButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/update"
+                android:background="@drawable/rounded_button_login"
+                android:textColor="@color/white"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
